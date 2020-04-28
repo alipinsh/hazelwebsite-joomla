@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" method="upgrade" type="plugin" group="content">
+	<name>Content-Social Count and Share</name>
+	<author>Sujith Kumar</author>
+	<creationDate>2015 January 18</creationDate>
+	<copyright>techlineinfo.com</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>admin@techlineinfo.com</authorEmail>
+	<authorUrl>http://www.techlineinfo.com</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[ <div style="color:#FFFFFF; background:#610a0a; border:1px solid #B0DFFF; padding:10px;margin:10px; border-radius: 4px;">
+		<div><a href="http://www.techlineinfo.com" target="_blank" style="color:#FFFFFF;"><h2>Social Count and Share</h2> </a><br />A Mashable inspired fully responsive Social Share bar with share counts from Techlineinfo.com by Sujith.</div>
+#Thank you for installing this Social Count and Share Free Plugin. Please post your comments, Feature Requests, bug reports here : <a href="http://www.techlineinfo.com/contact" target="_blank" style="color:#FFFFFF;">Click Here - Contact Us</a> <br />
+##If you like this plugin, Please Review this plugin in Joomla! Extension Directory  : <a href="http://www.techlineinfo.com/contact" target="_blank" style="color:#FFFFFF;">Review This Extension</a> 
+		</div> ]]>
+	</description>
+	<files>
+	<filename plugin="techline_mashcount">techline_mashcount.php</filename>
+	<filename>index.html</filename>
+       <filename>license.txt</filename>
+	<folder>language</folder>
+<folder>js</folder>
+ <folder>fonts</folder>
+	 <folder>css</folder>
+</files>
+	 <files folder="css">
+		<filename>styles.css</filename>
+		</files>
+<files folder="js">
+		<filename>techline.min.js</filename>
+			</files>
+<files folder="fonts">
+<filename>index.html</filename>
+<filename>FontAwesome.otf</filename>
+<filename>fontawesome-webfont.eot</filename>
+<filename>fontawesome-webfont.svg</filename>
+<filename>fontawesome-webfont.ttf</filename>
+<filename>fontawesome-webfont.woff</filename>		
+</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_techline_mashcount.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_techline_mashcount.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		    <fieldset name="basic">
+					<field name="position" type="radio" class="btn-group" default="above" label="PLG_SOCIAL_COUNT_AND_SHARE_POSITION" description="PLG_SOCIAL_COUNT_AND_SHARE_POSITION_DESC">
+						<option value="above">PLG_SOCIAL_COUNT_AND_SHARE_ABOVE</option>
+						<option value="below">PLG_SOCIAL_COUNT_AND_SHARE_BELOW</option>
+					</field>
+		<field name="top_bar" type="radio" class="btn-group" default="1" label="PLG_SOCIAL_COUNT_AND_SHARE_TOP_BAR_SHOW" description="PLG_SOCIAL_COUNT_AND_SHARE_TOP_BAR_SHOW_DESC">
+						<option value="0">DISABLE</option>
+						<option value="1">ENABLE</option>
+					</field>			
+						
+					<field name="exclude_cat" type="category" extension="com_content" multiple="true" size="10" default="" label="PLG_SOCIAL_COUNT_AND_SHARE_EXCLUDE_CATEGORIE" description="PLG_SOCIAL_COUNT_AND_SHARE_EXCLUDE_CATEGORIE_DESC" >
+					</field>
+					<field name="exclude_art" type="text" default="" label="PLG_SOCIAL_COUNT_AND_SHARE_EXCLUDE_ARTICLE_ID" description="PLG_SOCIAL_COUNT_AND_SHARE_EXCLUDE_ARTICLE_ID_DESC" />
+					<field name="twitter_handle" type="text" default="" label="PLG_SOCIAL_COUNT_AND_TWITTER_HANDLE" description="PLG_SOCIAL_COUNT_TWITTER_HANDLE_DESC" />
+								
+					<field name="og" type="radio" class="btn-group" default="1" label="PLG_SOCIAL_COUNT_AND_SHARE_OG" description="PLG_SOCIAL_COUNT_AND_SHARE_OG_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>						
+<field name="share_text" type="text" default="SHARES" label="PLG_SOCIAL_COUNT_AND_SHARE_SHARE_TXT" description="PLG_SOCIAL_COUNT_AND_SHARE_SHARE_TXT_DESC" />					
+<field name="twitter_text" type="text" default="Share on Twitter" label="PLG_SOCIAL_COUNT_AND_SHARE_TWEET_TXT" description="PLG_SOCIAL_COUNT_AND_SHARE_TWEET_TXT_DESC" />
+<field name="fb_text" type="text" default="Share on Facebook" label="PLG_SOCIAL_COUNT_AND_SHARE_FB_TXT" description="PLG_SOCIAL_COUNT_AND_SHARE_FB_TXT_DESC" />
+		<field name="twitter_text_alt" type="text" default="Tweet" label="PLG_SOCIAL_COUNT_AND_SHARE_TWEET_TXT_ALT" description="PLG_SOCIAL_COUNT_AND_SHARE_TWEET_TXT_ALT_DESC" />
+<field name="fb_text_alt" type="text" default="Share" label="PLG_SOCIAL_COUNT_AND_SHARE_FB_TXT_ALT" description="PLG_SOCIAL_COUNT_AND_SHARE_FB_TXT_DESC" />	
+					
+<field name="reddit" type="radio" class="btn-group" default="0" label="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_REDDIT" description="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_REDDIT_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+<field name="digg" type="radio" class="btn-group" default="0" label="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_DIGG" description="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_DIGG_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+<field name="delicious" type="radio" class="btn-group" default="0" label="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_DELICIOUS" description="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_DELICIOUS_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+<field name="print" type="radio" class="btn-group" default="0" label="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_PRINT" description="PLG_SOCIAL_COUNT_AND_SHARE_SHOW_BUTTON_PRINT_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+</field>
+<field name="spacer1" type="spacer" default="Top Bar Settings" label="&lt;b&gt;Top Bar Settings&lt;/b&gt;" description="Top bar settings" />											
+<field name="sharebar_color" type="color" default="#FFF"
+	label="PLG_SOCIAL_COUNT_AND_SHARE_BAR_BACKGROUND_COLOR_LABEL"
+	description="PLG_SOCIAL_COUNT_AND_SHARE_BAR_BACKGROUND_COLOR_DESC" />
+<field name="bar-offset" type="text" default="400" label="PLG_SOCIAL_COUNT_AND_SHARE_BAR_OFFSET" description="PLG_SOCIAL_COUNT_AND_SHARE_BAR_OFFSET_DESC" />
+	<field name="bar_logo" type="imagelist" default="" label="PLG_SOCIAL_COUNT_AND_SHARE_BAR_LOGO" description="PLG_SOCIAL_COUNT_AND_SHARE_BAR_DESC" directory="images" exclude="" stripext="" />	
+</fieldset>
+		</fields>
+	</config>
+</extension>
